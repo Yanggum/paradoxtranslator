@@ -5,7 +5,7 @@ from googletrans import Translator
 
 translator = Translator()
 
-path = 'C:\\Users\\bak40\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\oldworldblueskorean\\localisation\\'
+path = 'C:\\Users\\Scret\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\oldworldblueskorean\\localisation\\'
 fileName = '*'
 extension = '.yml'
 srcFile = path + fileName + extension
