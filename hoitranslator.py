@@ -5,7 +5,7 @@ from googletrans import Translator
 
 translator = Translator()
 
-path = 'C:\\Users\\Scret\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\oldworldblueskorean\\localisation\\'
+path = 'C:\\Users\\bak40\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\oldworldblueskorean\\localisation\\'
 fileName = '*'
 extension = '.yml'
 srcFile = path + fileName + extension
@@ -27,7 +27,7 @@ for file in files:
             break
     
         x = re.findall(r'\"(.+)\"', line)
-        if translator.detect(x).lang == 'ko':
+#        if translator.detect(x).lang == 'ko':
             
         if len(x) > 0:
             translatedText =  '"' + translator.translate(x[0], dest='ko', src='en').text + '"'
